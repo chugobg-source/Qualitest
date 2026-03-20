@@ -81,6 +81,8 @@ Each person can handle at most 1 heavy activity per week
 - Example:
 GWS   | P: Hugo   | S: None
 
+
+
 ---
 
 ## ⚙️ SOFT CONSTRAINTS (Optimized via Scoring)
