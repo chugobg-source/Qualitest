@@ -58,3 +58,50 @@ vacations = {
     2: ["Ahmed"]
 }
 
+---
+
+## ⚖️ Heavy Activity Constraint
+Heavy activities:
+GWS
+Mars
+LPM
+Rule:
+Each person can handle at most 1 heavy activity per week
+
+---
+
+## ⚠️ Feasibility Fallback
+- If there are not enough people (e.g. due to vacations):
+- The system detects infeasibility:
+# heavy slots = 6 (3 activities × 2 roles)
+# capacity = number of active people
+- If infeasible:
+✅ Always assign Primary
+❌ Allow Secondary = None
+- Example:
+GWS   | P: Hugo   | S: None
+
+---
+
+## ⚙️ SOFT CONSTRAINTS (Optimized via Scoring)
+- These are not strictly enforced, but minimized using penalties.
+📊 SCORING SYSTEM
+- The scheduler assigns a score to each candidate schedule.
+- Lower score = better schedule
+Penalties:
+- Condition	Penalty
+- Same primary as previous week	+10
+- Same (primary, secondary) pair	+6
+- Same person repeats same heavy activity	+8
+- Load imbalance	+2 × (max_primary - min_primary)
+
+---
+
+## 💡 Future Improvements
+- Multi-week memory (beyond previous week)
+- Priority ranking of activities
+- Deterministic scheduling (fixed seed)
+
+
+
+
