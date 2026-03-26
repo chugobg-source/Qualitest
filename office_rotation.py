@@ -4,16 +4,16 @@ from collections import defaultdict
 # -----------------------------
 # DATA
 # -----------------------------
-people = ["Hugo", "Ivan", "Emilio", "Christian", "William", "Ahmed", "Jesus"]
-activities = ["QRewrite", "GWS", "iGA", "superroot", "assistant", "Mars", "LPM", "PolyQUS"]
+people = ["p1", "p2", "p3", "p4", "p5", "p6", "p7"]
+activities = ["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]
 
-heavy_activities = {"GWS", "Mars", "LPM"}
+heavy_activities = {"a1", "a2", "a3"}
 MIN_SKILLS = 6
 
 # Vacations: week_index -> list of people OFF
 vacations = {
-    1: ["Ivan"],
-    2: ["Ahmed"],
+    1: ["p1"],
+    2: ["p2"],
 }
 
 # -----------------------------
