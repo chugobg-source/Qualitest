@@ -79,7 +79,7 @@ Each person can handle at most 1 heavy activity per week
 ✅ Always assign Primary
 ❌ Allow Secondary = None
 - Example:
-GWS   | P: Hugo   | S: None
+a1   | P: p3   | S: None
 
 
 
